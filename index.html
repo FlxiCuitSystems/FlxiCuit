@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlxiCuit Systems</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --secondary: #6610f2;
+      --accent: #20c997;
+      --light: #f8f9fa;
+      --dark: #212529;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .services ul {
+      padding-left: 1.5rem;
+    }
+
+    .services li {
+      margin-bottom: 0.5rem;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .portfolio img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.03);
+    }
+
+    .blog {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    .contact a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: var(--accent);
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FlxiCuit Systems</h1>
+    <p>"From Idea to Product - We Engineer Excellence"</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to FlxiCuit Systems — your partner in innovation. Based in Chennai, we provide cutting-edge electronic solutions including embedded systems, PCB design, and automation. We are passionate about turning concepts into real-world solutions.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Custom PCB Design & Fabrication</li>
+      <li>Embedded Systems Development</li>
+      <li>IoT Solutions & Prototyping</li>
+      <li>Industrial Automation Projects</li>
+      <li>Academic Projects for Final Year Students</li>
+    </ul>
+  </section>
+
+  <section class="portfolio">
+    <h2>Sample Work</h2>
+    <img src="https://source.unsplash.com/800x400/?circuit" alt="PCB Design Example" />
+    <img src="https://source.unsplash.com/800x400/?electronics" alt="Embedded Prototype" />
+    <img src="https://source.unsplash.com/800x400/?microcontroller" alt="Microcontroller Board" />
+  </section>
+
+  <section class="blog">
+    <h2>Latest Blog</h2>
+    <h3>Getting Started with Embedded Systems</h3>
+    <p>Embedded systems are at the core of modern electronics. In this blog, we discuss how to approach embedded development from the basics and what tools you’ll need to start building.</p>
+    <p><em>More blog posts coming soon...</em></p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: flxicuit@gmail.com<br>
+    Phone: +91 8248061670<br>
+    LinkedIn: <a href="https://www.linkedin.com/in/flxicuit-systems" target="_blank" style="color: white; text-decoration: underline;">flxicuit-systems</a></p>
+    <a class="button" href="https://forms.gle/gC3jCWzPoBfDDaiNA" target="_blank">Get a Free Quote</a>
+  </section>
+
+  <footer>
+    &copy; 2025 FlxiCuit Systems. All rights reserved.
+  </footer>
+</body>
+</html>
