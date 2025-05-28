@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta name="google-site-verification" content="d9MKxUvScORMYWXFQHMXugx21CQ0tWkkxOj-fheyxPM" />
     <meta charset="UTF-8">
     <meta name="description" content="FlxiCuit Systems - We provide cutting-edge electronics solutions like PCB design, embedded systems, IoT and automation projects. Based in Chennai.">
@@ -334,57 +333,70 @@
         }
         
         /* Blog Section */
-        .blog {
+        .blog-post {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .blog-title {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
             text-align: center;
         }
         
-        .blog-placeholder {
-            padding: 4rem 2rem;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .blog-placeholder i {
-            font-size: 4rem;
-            color: var(--gray);
-            margin-bottom: 1.5rem;
-        }
-        
-        .blog-placeholder h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+        .blog-content {
+            line-height: 1.8;
             color: var(--dark);
         }
         
-        .blog-placeholder p {
-            color: var(--gray);
-            margin-bottom: 2rem;
+        .blog-content p {
+            margin-bottom: 1.5rem;
         }
         
-        .coming-soon {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
+        .blog-content h3 {
+            color: var(--primary);
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
         }
         
-        .blog-topics {
-            margin-top: 3rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
+        .blog-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
         }
         
-        .topic {
-            background-color: var(--primary);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 500;
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .blog-content table, .blog-content th, .blog-content td {
+            border: 1px solid #ddd;
+        }
+        
+        .blog-content th, .blog-content td {
+            padding: 0.8rem;
+            text-align: left;
+        }
+        
+        .blog-content th {
+            background-color: #f1f5f9;
+        }
+        
+        .blog-content .highlight {
+            background-color: #f8fafc;
+            padding: 1.5rem;
+            border-left: 4px solid var(--secondary);
+            margin: 1.5rem 0;
         }
         
         /* Contact Section */
@@ -583,6 +595,10 @@
             .about-image {
                 order: -1;
             }
+            
+            .blog-post {
+                padding: 2rem;
+            }
         }
         
         @media (max-width: 768px) {
@@ -620,6 +636,10 @@
             .section-title h2 {
                 font-size: 2rem;
             }
+            
+            .blog-title {
+                font-size: 1.8rem;
+            }
         }
         
         @media (max-width: 576px) {
@@ -637,6 +657,14 @@
             
             .service-card, .vision, .mission {
                 padding: 1.5rem;
+            }
+            
+            .blog-post {
+                padding: 1.5rem;
+            }
+            
+            .blog-title {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -757,22 +785,88 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog" id="blog">
+    <section id="blog">
         <div class="section-title">
             <h2>Our Blog</h2>
         </div>
-        <div class="blog-placeholder">
-            <i class="fas fa-blog"></i>
-            <h3>Our Blog is Coming Soon</h3>
-            <p>We're working on creating valuable content to share our knowledge and insights about electronics and embedded systems.</p>
-            <span class="coming-soon">Coming Soon</span>
-            
-            <div class="blog-topics">
-                <div class="topic">Basics of Embedded Systems</div>
-                <div class="topic">PCB Design Tips & Tools</div>
-                <div class="topic">IoT Use Cases</div>
-                <div class="topic">Prototyping Mistakes</div>
-                <div class="topic">Academic Projects</div>
+        <div class="blog-post">
+            <h2 class="blog-title">Basics of Embedded Systems – Simple Guide for Beginners</h2>
+            <div class="blog-content">
+                <p>Have you ever wondered how your washing machine knows how long to wash clothes or how your smartwatch counts your steps? The answer is: embedded systems.</p>
+                
+                <p>Let's understand what they are, how they work, and where we use them — in very simple words.</p>
+                
+                <div class="highlight">
+                    <h3>💡 What Is an Embedded System?</h3>
+                    <p>An embedded system is a small computer built inside a device to do a specific job.</p>
+                    <p>Unlike regular computers, it doesn't run many apps — it just does one thing really well.</p>
+                    
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li>A microwave uses an embedded system to heat your food.</li>
+                        <li>A digital watch uses it to show time.</li>
+                    </ul>
+                </div>
+                
+                <h3>🔧 Main Parts of an Embedded System</h3>
+                <ul>
+                    <li><strong>Microcontroller (or Microprocessor)</strong><br>– The brain that controls everything.</li>
+                    <li><strong>Memory</strong><br>– Stores the program and temporary data.</li>
+                    <li><strong>Inputs & Outputs</strong><br>– Inputs: buttons, sensors<br>– Outputs: screens, motors, lights</li>
+                    <li><strong>Software</strong><br>– A small program (called firmware) that tells the system what to do.</li>
+                </ul>
+                
+                <h3>🌍 Where Do We Use Embedded Systems?</h3>
+                <table>
+                    <tr>
+                        <th>Device</th>
+                        <th>What It Does</th>
+                    </tr>
+                    <tr>
+                        <td>Washing Machine</td>
+                        <td>Controls washing cycle</td>
+                    </tr>
+                    <tr>
+                        <td>Smartwatch</td>
+                        <td>Tracks steps and time</td>
+                    </tr>
+                    <tr>
+                        <td>Car</td>
+                        <td>Controls brakes, airbags, lights</td>
+                    </tr>
+                    <tr>
+                        <td>TV Remote</td>
+                        <td>Sends signals to the TV</td>
+                    </tr>
+                </table>
+                
+                <h3>🔄 Types of Embedded Systems</h3>
+                <ul>
+                    <li><strong>Standalone</strong> – Works on its own (like a calculator).</li>
+                    <li><strong>Real-Time</strong> – Gives fast responses (like airbags in a car).</li>
+                    <li><strong>Networked</strong> – Connects to the internet (like smart home devices).</li>
+                    <li><strong>Mobile</strong> – Used in small portable gadgets (like phones).</li>
+                </ul>
+                
+                <h3>🛠️ What You Can Use to Learn</h3>
+                <ul>
+                    <li><strong>Boards:</strong> Arduino, ESP32, Raspberry Pi</li>
+                    <li><strong>Languages:</strong> C, Embedded C, Python</li>
+                    <li><strong>Tools:</strong> Arduino IDE, Keil, MPLAB X</li>
+                </ul>
+                
+                <h3>✅ Why Learn Embedded Systems?</h3>
+                <ul>
+                    <li>Used in IoT, electronics, robots, and smart devices</li>
+                    <li>Helps you understand how things work</li>
+                    <li>Good job opportunities in tech companies</li>
+                </ul>
+                
+                <div class="highlight">
+                    <h3>📌 Final Note</h3>
+                    <p>Embedded systems are all around us — in homes, hospitals, cars, and offices. If you like electronics or want to build smart gadgets, learning embedded systems is a great start!</p>
+                    <p>Start simple. Build small projects. Learn as you go. 😊</p>
+                </div>
             </div>
         </div>
     </section>
@@ -823,7 +917,7 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form id="contactForm" action="https://formspree.io/f/mvojzrqz" method="POST">
+                <form id="contactForm" action="https://formspree.io/f/mvgaervz" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
@@ -858,6 +952,7 @@
                 <a href="#blog">Blog</a>
                 <a href="#contact">Contact</a>
             </div>
+            <p class="copyright">© 2023 FlxiCuit Systems. All Rights Reserved.</p>
         </div>
     </footer>
 
